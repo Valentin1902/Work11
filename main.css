@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   background-image: url(/img/e2e679edc465ef061a43a2d140c058b0.jpg);
+}
+.star{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stone{
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    animation: stone1 12s linear infinite;
+}
+@keyframes stone1{
+    0%{
+        transform: translate(0,0)rotate(0deg);
+    }
+    50%{
+        transform: translate(160vw, 0px)rotate(180deg);
+    }
+    100%{
+    transform: translate(-40vw, -1000px) rotate(360deg);
+}
+}
+.moon{
+    margin: 30vh 0 0 40vw;
+    animation: rotateX 122350ms linear infinite;
+    position: absolute;
+}
+@keyframes rotateX {
+    from{
+        transform: rotate(0deg);
+    }
+     to{
+transform: rotate(360deg);
+    }
+}
+.stone2{
+    width: 80px;
+    top: 10%;
+    right: -10%;
+    animation: stone2 12s linear infinite;
+    z-index: -1;
+    
+}
+@keyframes stone2{
+    0%{
+        transform: translate(0,0)rotate(0deg);
+    }
+    50%{
+        transform: translate(160vw, 440px)rotate(180deg);
+    }
+    100%{
+    transform: translate(-40vw, 1000px) rotate(360deg);
+}
+}
+.comet{
+    position: absolute;
+    width: 300px;
+    top: 60vh;
+    left: -40vw;
+    z-index: -1;
+    animation: comet 10s linear infinite;
+    rotate: 18deg;
+}
+@keyframes comet{
+    0%{
+        transform: translate(0,0) scale(1.5);
+    }
+    50%{
+        transform: translate(120vw, 100px) scale(0);
+    }
+    
+}
+
+/*
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: red;
+    /*transition-property:background-color, transform;
+    transition-duration: 500ms;
+    transition-delay: 0;
+    transition-timing-function:linear;
+    transition: background-color, transform 500ms linear;
+}
+.box:hover{
+    background-color: teal;
+    transform: rotate(5deg) scale(2) ;
+
+}
+
+
+.conteiner{
+    border: 1px dashed black;
+    border-radius: 10px;
+    width: 50vw;
+    padding: 10px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    margin-bottom: 20px;
+    transform: translate(0);
+    transition-property: transform;
+    transition-duration: 2000ms;
+}
+.conteiner:hover.circle{
+    transform: translateX(90vw);
+}
+
+
+
+
+.circle:nth-child(1){
+    background-color: teal;
+    transition-timing-function: linear;
+}
+.circle:nth-child(2){
+    background-color: green;
+    transition-timing-function: ease;
+}
+.circle:nth-child(3){
+    background-color: yellow;
+    transition-timing-function: ease-in;
+}
+.circle:nth-child(4){
+    background-color: pink;
+    transition-timing-function: ease-out;
+}
+.circle:nth-child(5){
+    background-color: tomato;
+    transition-timing-function: ease-in-out;
+}
+.circle:nth-child(6){
+    background-color: blue;
+    transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+}
+/*

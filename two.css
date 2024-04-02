@@ -1,0 +1,11 @@
+.prod_card:hover{
+    animation: rotateX 1500ms alternate ease-in-out 1000ms;
+}
+@keyframes rotateX{
+    0% {
+        transform: perspective(0px) scale(1)
+    }
+    100% {
+        transform: perspective(150px) scale(1.5)
+    }
+}
